@@ -1,7 +1,7 @@
 <?php
 $file = 'blacklist.json';
-$userId = $_POST['userId'];
-$reason = $_POST['reason'];
+$userId = $_GET['userId'];
+$reason = $_GET['reason'];
 
 $blacklistData = file_get_contents($file);
 $blacklistArray = json_decode($blacklistData, true);
